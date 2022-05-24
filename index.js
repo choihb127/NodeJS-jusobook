@@ -65,3 +65,4 @@ var port=3000;
 app.listen(port,function(){
     console.log('server on! http://localhost:'+port);
 }); // 3000번 포트에 연결
+//asdf
