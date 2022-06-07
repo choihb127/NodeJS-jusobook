@@ -11,4 +11,4 @@ var contactSchema=mongoose.Schema({ // 스키마설정 => DB에 저장할 구조
 
 var Contact=mongoose.model('contact',contactSchema); // contactSchema 모델 생성. 형태: model(콜렉션의 이름, Schema오브젝트)
 
-module.exports=Contact;
+module.exports=Contact; // Contact 변수를 model로 만듬. require 로 불러오기 가능

@@ -2,7 +2,7 @@
 
 var express=require('express');
 var router=express.Router();
-var Contact=require('../models/Contact');
+var Contact=require('../models/Contact'); // 'models/Contact' 의 Contact module require 호출
 
 //Index
 router.get('/',function(req,res){ // '/contacts' 경로로 get요청경우
@@ -58,4 +58,4 @@ router.delete('/:id',function(req,res){ // 'contacts/:id' 경로로 delete요청
     });
 }); // 이전에 index.js에 있던 contact--destroy와 동일한것. app에서 router로 변수명 변경됨. 요청경로 '/contacts' 생략됨.
 
-module.exports=router;
+module.exports=router; // router 변수를 model로 만듬. require 로 불러오기 가능

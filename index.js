@@ -102,8 +102,8 @@ app.delete('/contacts/:id',function(req,res){ // 'contacts/:id' 경로로 delete
 */
 
 //Routes
-app.use('/',require('./routes/home'));
-app.use('/contacts',require('./routes/contacts'));
+app.use('/',require('./routes/home')); // 'routes/homejs' 와 연결
+app.use('/contacts',require('./routes/contacts')); // 'routes/contacts.js' 와 연결
 
 //port setting
 var port=3000;
